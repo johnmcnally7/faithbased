@@ -1,0 +1,14 @@
+#mapcontainer {
+	height: 94%;
+	width: 100%;
+	border: 4px solid #c8c8c8;
+	position: absolute;
+}
+
+.navbar.navbar-default {
+	margin: 0px;
+}
+
+.navbar-brand, .dropdown-toggle {
+	font-family: 'Oswald', sans-serif;
+}
