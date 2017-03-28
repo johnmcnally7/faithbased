@@ -34,12 +34,25 @@
             fillColor: getColor(feature.properties.faithbas18),
             weight: 1,
             opacity: .9,
-            color: 'white',
-            dashArray: '2',
-            fillOpacity: 0.7,
+            color: '#686868',
+            dashArray: '1',
+            fillOpacity: 1,
             radius: 4
         };
     }
+//mapzen options
+var options = {
+    bounds:true,
+    position: 'topright',
+    expanded: true,
+    markers: true,
+    panToPoint: true
+};
+
+
+//mapzen api key 
+L.control.geocoder('mapzen-32exP1A', options).addTo(map);
+
 
 
  //scale bar 
