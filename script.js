@@ -14,7 +14,11 @@
     var layer = L.geoJson(faithbased, {
         pointToLayer: function (feature, latlng) {
             return L.circleMarker (latlng, style(feature))
-        }
+        },
+//click to display lot information
+     onEachFeature: function(feature, layer) {
+        layer.bindPopup('<b>Owner:</b> ' + feature.properties.ownername + '<b><br>Address:</b> ' + feature.properties.address + ' Brooklyn, NY' + '<b><br>Residential Development Rights:</b> ' + feature.properties.faithbas12 + ' sq. ft.')
+         }
     }).addTo(map);
 
     //color selector for pop density
@@ -40,6 +44,9 @@
             radius: 4
         };
     }
+
+
+
 //mapzen options
 var options = {
     bounds:true,
