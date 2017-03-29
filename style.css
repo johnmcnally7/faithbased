@@ -9,19 +9,20 @@
 
 .navbar.navbar-default {
 	margin: 0px;
+	font-family: 'Oswald', sans-serif;
 }
 
 .navbar-brand, .dropdown-toggle {
 	font-family: 'Oswald', sans-serif;
 }
 
-.text {
+#side {
 	color: #484848;
-	font-size: 12px;
-	font-family: arial;
+	font-family: 'Oswald', sans-serif;
 	float: right;
 	display: inline-block;
-	width: 35%;
+	width: 27%;
+	margin-right: 10px;
 }
 
 .slide {

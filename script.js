@@ -51,7 +51,7 @@
 var options = {
     bounds:true,
     position: 'topright',
-    expanded: true,
+    expanded: false,
     markers: true,
     panToPoint: true
 };

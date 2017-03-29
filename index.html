@@ -20,9 +20,9 @@
 </head>
 
 <body>
-<!--navbar-->
+
 <nav class="navbar navbar-default">
-  <div class="container">
+  <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -37,15 +37,26 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span>  About</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-download"></span>  Download Data<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">The following map displays all 2,743 faith-based lots in Brooklyn. By clicking on each lot the user will be shown information on the lot.</a></li>
+           
+            <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>  Excel Database</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Tax Lot Shapefile</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Powerpoint Presentation</a></li>
           </ul>
         </li>
-      </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-phone"></span>  Contact<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           
+            <li><a href="http://www.linkedin.com/in/johnmcnally7">LinkedIn</a></li>
+          </ul>
         </li>
-      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -53,8 +64,20 @@
 
 <!--map-->
 <div id="mapcontainer">
-  <p class="text">Hello</p>
 </div>
+
+<!--sideinformation-->
+<div id="side">
+  <h2>Home</h2>
+  <hr>
+  <p class="about"> The following map shows faith-based properties in Brooklyn. Each dot is one of the 2,743 faith-based properties in the borough. By clicking on the dot, users can learn more about the address, the property owner, and the amount of residential development rights associated with the tax lot. Users can either locate properties manually by scrolling through the map or by clicking in the upper right corner of the map and using the search bar. 
+  <br>
+  <br>
+  Users can learn more about the purpose of the project as well as the methodology used to calculate residential development rights in the 'About' section. 
+  <br>
+  <br>
+  Data is also available for download in both .csv and .shp formats.
+<div>
 
 <!--slide for lot information-->
 <div id="slideleft" class="slide">
