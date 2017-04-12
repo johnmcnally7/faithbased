@@ -25,11 +25,10 @@
 	margin-right: 10px;
 }
 
-.slide {
-	position: relative;
+#instructions {
+	font-size: 10px
 }
 
-.slide .inner {
-	position: absolute;
-	left: 0;
+#info {
+	font-size: 14px;
 }

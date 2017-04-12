@@ -21,6 +21,9 @@
          }
     }).addTo(map);
 
+//change lot information tab when clicked on property
+
+
     //color selector for pop density
     function getColor(d) {
          return d > 100000 ? '#084594' :
