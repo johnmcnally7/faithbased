@@ -9,6 +9,54 @@
         maxZoom: 18,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
       }).addTo(map);
+//boundary outline 
+
+var boundarystyle = {
+    color: '#6baed6',
+    opacity: 0.5,
+    fillOpacity: 0
+};
+
+
+var bkboundary = L.geoJson(boundary, {
+    style: boundarystyle
+}).addTo(map);
+
+//community district outline 
+
+var cdstyle = {
+    color: '#cb181d',
+    opacity: 0.5,
+    fillOpacity: 0,
+    dashArray: 5
+};
+
+
+var cdboundary = L.geoJson(cd, {
+    style: cdstyle
+})
+
+//city council outline 
+
+var ccstyle = {
+    color: '#cb181d',
+    opacity: 0.5,
+    fillOpacity: 0,
+    dashArray: 5
+};
+
+
+var ccboundary = L.geoJson(cc, {
+    style: ccstyle
+})
+
+//create overlays
+var overlays = {
+    "Community Districts": cdboundary,
+    "City Council Districts": ccboundary
+}
+//control layers
+L.control.layers(null,overlays, {collapsed:false}).addTo(map);
 
     //add faithbased geojson data to map
     var layer = L.geoJson(faithbased, {
@@ -17,11 +65,11 @@
         },
 //click to display lot information
      onEachFeature: function(feature, layer) {
-        layer.bindPopup('<b>Owner:</b> ' + feature.properties.properowner + '<b><br>Address:</b> ' + feature.properties.properaddress + ' Brooklyn, NY' + '<b><br>Residential Development Rights:</b> ' + feature.properties.faithbas12 + ' sq. ft.')
+        layer.bindPopup('<b>Owner:</b> ' + feature.properties.properowner + '<b><br>Address:</b> ' + feature.properties.properaddress + ' Brooklyn, NY' + '<b><br>Residential Development Rights:</b> ' + feature.properties.faithbas12 + ' sq. ft.' + '<br><b>Community District:  </b>' + feature.properties.CD + '<br><b>City Council District:  </b>' + feature.properties.Council)
          }
     }).addTo(map);
 
-//change lot information tab when clicked on property
+
 
 
     //color selector for pop density
@@ -47,8 +95,6 @@
             radius: 4
         };
     }
-
-
 
 //mapzen options
 var options = {

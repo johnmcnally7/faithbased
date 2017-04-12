@@ -43,18 +43,16 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-download"></span>  Download Data<span class="caret"></span></a>
           <ul class="dropdown-menu">
            
-            <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span>  Excel Database</a></li>
+            <li><a href="FaithBasedTaxLotDatabase.xlsx"><span class="glyphicon glyphicon-list-alt"></span>   Excel Database</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Tax Lot Shapefile</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Powerpoint Presentation</a></li>
+            <li><a href="FaithBasedCentroids.zip"><span class="glyphicon glyphicon-globe"></span>   Tax Lot Shapefile</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-phone"></span>  Contact<span class="caret"></span></a>
           <ul class="dropdown-menu">
            
-            <li><a href="http://www.linkedin.com/in/johnmcnally7">LinkedIn</a></li>
+            <li><a href="http://www.linkedin.com/in/johnmcnally7"><span class="glyphicon glyphicon-inbox"></span>   LinkedIn</a></li>
           </ul>
         </li>
     </div><!-- /.navbar-collapse -->
@@ -73,19 +71,8 @@
   <p id="instructions">
     <i>Click on a dot to learn more about that faith-based property</i>
   </p>
-  <br>
-  <p id="info">
-    <b>Owner:</b>
-    <br>
-    <br>
-    <b>Address:</b>
-    <br>
-    <br>
-    <b>Residential Development Rights:</b>
-  </p>
-  <hr>
   <p class="about"> 
-    The following map shows faith-based properties in Brooklyn. Each dot is one of the 2,743 faith-based properties in the borough. By clicking on the dot, users can learn more about the address, the property owner, and the amount of residential development rights associated with the tax lot. Due to file size constraints, the entire property owner names cannot be displayed. Users can either locate properties manually by scrolling through the map or by clicking in the upper right corner of the map and using the search bar. 
+    The following map shows faith-based properties in Brooklyn. Each dot is one of the 2,743 faith-based properties in the borough. By clicking on the dot, users can learn more about the address, the property owner, and the amount of residential development rights associated with the tax lot. Due to file size constraints, the entire property owner names cannot be displayed. Users can either locate properties manually by scrolling through the map or by clicking on the <span class="glyphicon glyphicon-search"></span> icon in the top right corner of the map and using the search bar. 
   <br>
   <br>
     Users can learn more about the purpose of the project as well as the methodology used to calculate residential development rights in the 'About' section. 
@@ -101,6 +88,9 @@
 </div>
 
   <script src="faithbased.js"></script>
+  <script src="boundary.js"></script>
+  <script src="cc.js"></script>
+  <script src="cd.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-geocoder-mapzen/1.8.1/leaflet-geocoder-mapzen.js"></script>
