@@ -63,13 +63,12 @@ L.control.layers(null,overlays, {collapsed:false}).addTo(map);
         pointToLayer: function (feature, latlng) {
             return L.circleMarker (latlng, style(feature))
         },
+
 //click to display lot information
      onEachFeature: function(feature, layer) {
         layer.bindPopup('<b>Owner:</b> ' + feature.properties.properowner + '<b><br>Address:</b> ' + feature.properties.properaddress + ' Brooklyn, NY' + '<b><br>Residential Development Rights:</b> ' + feature.properties.faithbas12 + ' sq. ft.' + '<br><b>Community District:  </b>' + feature.properties.CD + '<br><b>City Council District:  </b>' + feature.properties.Council)
          }
     }).addTo(map);
-
-
 
 
     //color selector for pop density
